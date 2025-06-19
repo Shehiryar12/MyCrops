@@ -10,11 +10,13 @@ export default function Register() {
       <Text style={styles.create}>Create Account</Text>
       <Text style={styles.Sign}>Sign Up</Text>
       <Text style={styles.Name}>Name</Text>
-      <TextInput style={styles.input} placeholder='Enter your name' placeholderTextColor={"#DBD8D8"} />
+      <TextInput style={styles.input} placeholder='Enter your name' placeholderTextColor={"#DBD8D8"}
+      keyboardType='name-phone-pad'/>
 
-   
-
+      <Text style={styles.FatherName}>Father's Name</Text>
     </View>
+
+  
   )
 }
 
@@ -40,7 +42,7 @@ const styles = StyleSheet.create({
         color:"#646464",
         marginLeft:15,
         fontSize:18,
-        marginTop:20,
+        marginTop:18,
         fontFamily:Font.medium  
          
    },
@@ -65,8 +67,13 @@ const styles = StyleSheet.create({
     borderColor:'green',
     color:"black",
     height:54
-    
- 
+  },
+  FatherName:{
+    fontSize:15,
+    fontFamily:Font.medium,
+    marginLeft:15,
+    marginTop:18,
+
   }
   
 
