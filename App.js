@@ -5,7 +5,7 @@ import Register from './Src/Screens/Register'
 export default function App() {
   return (
     <View>
-      <Register title="Create Account"/>
+      <Register/>
     </View>
   )
 }
