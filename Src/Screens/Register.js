@@ -1,20 +1,34 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
-export default function Register(props) {
+export default function Register() {
   return (
     <View>
-      <Text style={styles.text}>{props.title}</Text>
+       <Icon name="chevron-left" size={30} color="black"/>
+      <Text style={styles.create}>Create account</Text>
+      <Text style={styles.Sign}>Sign Up</Text>
+
 
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-    text:{
-        textAlign:'center',
+   create:{
         fontSize:20,
-        // opacity:100,
-         marginVertical:85,
-    }
+         textAlign:'center',
+        // marginVertical:89,
+        
+        
+   },
+
+   Sign:{
+         color:"green",
+         fontSize:18,
+        //  marginHorizontal:24,
+         
+        
+         
+   }
 })
