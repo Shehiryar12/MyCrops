@@ -19,6 +19,11 @@ export default function Register() {
       <CustomTextInput placeholder="Enter your email" title="Email" keyboardtype={"email-address"}/>
       <CustomTextInput placeholder="Enter your Phone number" title="phone Number" keyboardtype={"phone-pad"}/>
       <CustomTextInput placeholder="Your DOB" title="DOB" keyboardtype={"phone-pad"}/>
+      <CustomTextInput placeholder="Enter your Password" title="Password" secureTextEntry={true}/>
+      <CustomTextInput placeholder="Confirm Password" title="Confirm Password" secureTextEntry={true}/>
+
+
+      
      
 </ScrollView>
 
