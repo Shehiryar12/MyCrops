@@ -14,6 +14,10 @@ export default function Register() {
       keyboardType='name-phone-pad'/>
 
       <Text style={styles.FatherName}>Father's Name</Text>
+      <TextInput style={styles.finput} placeholder='Enter your father name' placeholderTextColor={"#DBD8D8"}
+      keyboardType='name-phone-pad'/>
+
+      
     </View>
 
   
@@ -47,17 +51,6 @@ const styles = StyleSheet.create({
          
    },
 
-  // holder:{
-
-  //   borderRadius:5,
-  //   borderWidth:2,
-  //   marginLeft:15,
-  //   marginRight:15,
-  //   height:54,
-  //   // color:"#DBD8D8",
-  //   borderSize:1,
-    
-  // }
   input:{
     fontSize:14,
     fontFamily:Font.regular,
@@ -69,11 +62,21 @@ const styles = StyleSheet.create({
     height:54
   },
   FatherName:{
-    fontSize:15,
+    fontSize:18,
     fontFamily:Font.medium,
     marginLeft:15,
     marginTop:18,
+    color:"#646464",
 
+  },
+  finput:{
+    borderWidth:1,
+    marginHorizontal:15,
+    borderRadius:7,
+    height:54,
+    borderColor:'#DBD8D8',
+    fontFamily:Font.regular,
+     fontSize:14
   }
   
 
