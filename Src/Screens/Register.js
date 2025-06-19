@@ -8,7 +8,7 @@ export default function Register() {
   return (
     <View>
 
-      <ScrollView>
+<ScrollView>
       <Icon name="chevron-left" size={30} color="black"/>
       <Text style={styles.create}>Create Account</Text>
       <Text style={styles.Sign}>Sign Up</Text>
@@ -20,11 +20,9 @@ export default function Register() {
       <CustomTextInput placeholder="Enter your Phone number" title="phone Number" keyboardtype={"phone-pad"}/>
       <CustomTextInput placeholder="Your DOB" title="DOB" keyboardtype={"phone-pad"}/>
       <CustomTextInput placeholder="Enter your Password" title="Password" secureTextEntry={true}/>
-      <CustomTextInput placeholder="Confirm Password" title="Confirm Password" secureTextEntry={true}/>
-
+      <CustomTextInput placeholder="Confirm your Password" title="Confirm your password" secureTextEntry={true}/>
 
       
-     
 </ScrollView>
 
 
