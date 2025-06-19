@@ -1,22 +1,30 @@
-import { StyleSheet, Text, View,TextInput } from 'react-native'
+import { StyleSheet, Text, View,TextInput, ScrollView } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { Font } from '../Constant/Fonts'
+import CustomTextInput from '../Components/CustomTextInput'
 
 export default function Register() {
   return (
     <View>
+
+      <ScrollView>
       <Icon name="chevron-left" size={30} color="black"/>
       <Text style={styles.create}>Create Account</Text>
       <Text style={styles.Sign}>Sign Up</Text>
-      <Text style={styles.Name}>Name</Text>
-      <TextInput style={styles.input} placeholder='Enter your name' placeholderTextColor={"#DBD8D8"}
-      keyboardType='name-phone-pad'/>
 
-      <Text style={styles.FatherName}>Father's Name</Text>
-      <TextInput style={styles.finput} placeholder='Enter your father name' placeholderTextColor={"#DBD8D8"}
-      keyboardType='name-phone-pad'/>
+      <CustomTextInput placeholder="Enter your name" title="Name"/>
+      <CustomTextInput placeholder="Enter your Father Name" title="Father Name"/>
+      <CustomTextInput placeholder="Enter your CNIC" title="CNIC" keyboardtype={"phone-pad"}/>
+      <CustomTextInput placeholder="Enter your email" title="Email" keyboardtype={"email-address"}/>
+      <CustomTextInput placeholder="Enter your Phone number" title="phone Number" keyboardtype={"phone-pad"}/>
+      <CustomTextInput placeholder="Your DOB" title="DOB" keyboardtype={"phone-pad"}/>
+     
+</ScrollView>
 
+
+
+     
       
     </View>
 
@@ -77,6 +85,14 @@ const styles = StyleSheet.create({
     borderColor:'#DBD8D8',
     fontFamily:Font.regular,
      fontSize:14
+  },
+
+  Cnic:{
+    marginLeft:15,
+    marginTop:18,
+    fontSize:18,
+    fontFamily:Font.medium,
+    color:"#646464",
   }
   
 
