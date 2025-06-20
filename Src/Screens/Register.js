@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View,TextInput, ScrollView } from 'react-native'
+import { StyleSheet, Text, View,TextInput, ScrollView, Button, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { Font } from '../Constant/Fonts'
 import CustomTextInput from '../Components/CustomTextInput'
+import MyButton from './MyButton'
 
 export default function Register() {
   return (
@@ -17,11 +18,16 @@ export default function Register() {
       <CustomTextInput placeholder="Enter your Father Name" title="Father Name"/>
       <CustomTextInput placeholder="Enter your CNIC" title="CNIC" keyboardtype={"phone-pad"}/>
       <CustomTextInput placeholder="Enter your email" title="Email" keyboardtype={"email-address"}/>
-      <CustomTextInput placeholder="Enter your Phone number" title="phone Number" keyboardtype={"phone-pad"}/>
+      <CustomTextInput placeholder="Enter your Phone number" title="Phone Number" keyboardtype={"phone-pad"}/>
       <CustomTextInput placeholder="Your DOB" title="DOB" keyboardtype={"phone-pad"}/>
       <CustomTextInput placeholder="Enter your Password" title="Password" secureTextEntry={true}/>
       <CustomTextInput placeholder="Confirm your Password" title="Confirm your password" secureTextEntry={true}/>
 
+      <MyButton title={"button"}>
+         
+      </MyButton>
+        
+     
       
 </ScrollView>
 
@@ -96,6 +102,23 @@ const styles = StyleSheet.create({
     fontSize:18,
     fontFamily:Font.medium,
     color:"#646464",
+  },
+  text:{
+     marginTop:18,
+      fontSize:18,
+      textAlign:"center",
+      fontSize:16,
+      fontFamily:Font.semiBold,
+      color:"#FFFFFF"
+
+  },
+  button:{
+     marginTop:18,
+    backgroundColor:"#009245",
+    height:57,
+    borderRadius:7,
+    marginHorizontal:15,
+    marginBottom:110,
   }
   
 

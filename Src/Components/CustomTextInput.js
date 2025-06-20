@@ -5,12 +5,11 @@ import { Font } from '../Constant/Fonts'
 export default function CustomTextInput(props) {
   return (
     <View>
+
     <Text style={styles.Name}>{props.title}</Text>
       <TextInput  style={styles.input} placeholder={props.placeholder} placeholderTextColor={"#DBD8D8"} keyboardType={props.keyboardtype}
       secureTextEntry={props.secureTextEntry}/>
-      
-      
-        
+  
     </View>
   )
 }
