@@ -14,7 +14,7 @@ export default function Register() {
       <Text style={styles.create}>Create Account</Text>
       <Text style={styles.Sign}>Sign Up</Text>
 
-      <CustomTextInput placeholder="Enter your name" title="Name"/>
+      <CustomTextInput placeholder="Enter your name" title="Name" />
       <CustomTextInput placeholder="Enter your Father Name" title="Father Name"/>
       <CustomTextInput placeholder="Enter your CNIC" title="CNIC" keyboardtype={"phone-pad"}/>
       <CustomTextInput placeholder="Enter your email" title="Email" keyboardtype={"email-address"}/>

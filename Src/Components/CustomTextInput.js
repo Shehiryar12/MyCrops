@@ -1,16 +1,25 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import React from 'react'
 import { Font } from '../Constant/Fonts'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 export default function CustomTextInput(props) {
   return (
     <View>
 
     <Text style={styles.Name}>{props.title}</Text>
+       <View style={styles.createicon}>
+         
       <TextInput  style={styles.input} placeholder={props.placeholder} placeholderTextColor={"#DBD8D8"} keyboardType={props.keyboardtype}
-      secureTextEntry={props.secureTextEntry}/>
-  
+      secureTextEntry={props.secureTextEntry} />
+      <Icon name="visibility" style={styles.icon } />
+
+      </View>
+      
+
+    
     </View>
+    
   )
 }
 
@@ -25,6 +34,7 @@ const styles = StyleSheet.create({
         color:"black",
         height:54,
         marginTop:10,
+        width:300,
       },
 
         Name:{
@@ -35,4 +45,18 @@ const styles = StyleSheet.create({
         fontFamily:Font.medium  
          
    },
+
+    icon:{
+      fontSize:16,
+      color:"blue"
+      //  textAlign:'right'
+
+      
+    },
+    createicon:{
+       backgroundColor:'red',
+       flexDirection:'row',
+       alignItems:'center'
+
+    }
 })
