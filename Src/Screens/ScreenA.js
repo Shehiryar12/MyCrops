@@ -10,7 +10,9 @@ const ScreenA = () => {
       <Text style = {{color:'red'}}>ScreenA</Text>
       <Button title={"go to screen b"} onPress={()=>{
         navigation.navigate("screenB",{
-          name:"ejaz"
+          name:"ejaz",
+          student:"ali",
+          age:13,
         }) }}
       />
 
