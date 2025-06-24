@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import ScreenA from './ScreenA';
 import ScreenB from './ScreenB';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import ScreenC from './ScreenC';
+
 
 const stack = createNativeStackNavigator();
 const StackNavigator = () => {
@@ -13,7 +15,12 @@ const StackNavigator = () => {
         <stack.Screen
           name="screenA"
           component={ScreenA}
-          options={{ title: 'screen A' }}
+          options={{ title: 'screen A',
+            headerShown:false,
+            headerStyle:{
+              backgroundColor:'orange'
+            }
+           }}
         />
 
         <stack.Screen
@@ -21,6 +28,14 @@ const StackNavigator = () => {
           component={ScreenB}
           options={{ title: 'screen B' }}
         />
+
+        <stack.Screen
+          name="screenC"
+          component={ScreenC}
+          options={{ title: 'screen C' }}
+        />
+         
+
       </stack.Navigator>
     </NavigationContainer>
   );
