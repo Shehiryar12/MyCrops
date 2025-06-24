@@ -9,8 +9,9 @@ const ScreenA = () => {
     <View>
       <Text style = {{color:'red'}}>ScreenA</Text>
       <Button title={"go to screen b"} onPress={()=>{
-        navigation.navigate("screenB")
-      }}
+        navigation.navigate("screenB",{
+          name:"ejaz"
+        }) }}
       />
 
        {/* <Button title={"go to screen A"} onPress={()=>{
