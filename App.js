@@ -1,15 +1,18 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Register from './Src/Screens/Register'
-import StackNavigator from './Src/Screens/StackNavigator'
+import BottomTabScreen from './Src/Screens/BottomTabScreen'
 
 export default function App() {
 
   return (
+    
+   <View style={{flex:1}}>
 
-    <View style = {{flex:1}}>
-     <StackNavigator />
-    </View>
+     <BottomTabScreen/>
+   </View>
+   
+
   )
 }
 
