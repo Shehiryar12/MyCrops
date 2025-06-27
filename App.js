@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Register from './Src/Screens/Register'
-import BottomTabScreen from './Src/Screens/BottomTabScreen'
+import DrawerScreen from './Src/Screens/DrawerScreen'
+import 'react-native-reanimated';
 
 export default function App() {
 
   return (
     
    <View style={{flex:1}}>
-
-     <BottomTabScreen/>
+    
+     <DrawerScreen/>
    </View>
    
 
