@@ -1,3 +1,5 @@
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import Ionicons from "react-native-vector-icons/Ionicons"
@@ -10,6 +12,7 @@ const LoginScreen = () => {
 
   return (
     <View>
+      <Text>LoginScreen</Text>
 
       <TouchableOpacity style={styles.backbutton}>
                          <Ionicons name="arrow-back-outline" style={styles.icon}/>                

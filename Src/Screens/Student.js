@@ -10,6 +10,8 @@ const Student = () => {
          Navigation.navigate("LOGIN")
   }
 
+  
+
   return (
    
 
