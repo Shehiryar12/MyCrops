@@ -1,17 +1,8 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { Font } from '../Constant/Fonts'
-import { useNavigation } from '@react-navigation/native'
 
 const Student = () => {
-
-  const Navigation=useNavigation()
-  const handleLogin = ()=>{
-         Navigation.navigate("LOGIN")
-  }
-
-  
-
   return (
    
 
@@ -24,7 +15,7 @@ const Student = () => {
 
             <View style={styles.buttonContainer}>
 
-              <TouchableOpacity style={styles.loginButtonwrapper} onPress={handleLogin}>
+              <TouchableOpacity style={styles.loginButtonwrapper}>
                   <Text style={styles.log}>Login</Text>
               </TouchableOpacity>
 
@@ -91,22 +82,21 @@ loginButtonwrapper:{
 },
 Signup:{
   
-  justifyContent:'center',
-  alignItems:'center',
-  width:"50%",
+  color:"white",
+  fontSize:18,
+  fontFamily:Font.semiBold
 },
 
-three:{
+// three:{
   
-  color:"black",
-  fontSize:18,
-  fontFamily:Font.medium
-},
+//   color:"white",
+//   fontSize:18,
+//   fontFamily:Font.semiBold
+// }
 
 log:{
   color:'white',
-  fontFamily:Font.medium,
-   fontSize:18,
+  fontFamily:Font.semiBold,
 }
 
 }) 

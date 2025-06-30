@@ -3,11 +3,9 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 
-import About from './Student';
-import Pageone from './Student';
 import Student from './Student';
 import LoginScreen from './LoginScreen';
-import Signup from '../Signup';
+
 
 
 const Stack=createNativeStackNavigator();
@@ -23,8 +21,8 @@ const Login = () => {
                         headerShown: false,
                        }}>
                                          <Stack.Screen 
-                                         name={"Form"} component={Student}/>
-
+                                         name={"Student"} component={Student}/>
+<Stack.Screen name="Login" component={LoginScreen} />
                                           
                        </Stack.Navigator>
                         

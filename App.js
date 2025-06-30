@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Login from './Src/Screens/Login'
+import School from './Src/Screens/School'
 
 
 
@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     
-   <Login/>
+ <School/>
    
 
   )
