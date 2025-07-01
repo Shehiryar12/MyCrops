@@ -18,6 +18,7 @@ const Pageone = () => {
                 incididunt ut labore et dolore </Text>  
 
            <View style={styles.buttonContainer}>
+            
                <TouchableOpacity style={styles.loginButtonWrapper}
                   onPress={handleLogin}
                >
