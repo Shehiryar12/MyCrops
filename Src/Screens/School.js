@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import Pageone from './Pageone'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Pagetwo from './Pagetwo'
+import Pagethree from './PageThree'
 
 
 const Stack = createNativeStackNavigator();
@@ -14,6 +15,7 @@ const School = () => {
       <Stack.Navigator screenOptions={{headerShown:false}}>
                             <Stack.Screen name={"pagingone"} component={Pageone}/>
                             <Stack.Screen name={"pagingtwo"} component={Pagetwo}/>
+                             <Stack.Screen name={"pagingthree"} component={Pagethree}/>
       </Stack.Navigator>
     </NavigationContainer>
   )

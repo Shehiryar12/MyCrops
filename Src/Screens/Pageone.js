@@ -9,6 +9,9 @@ const Pageone = () => {
     const navigation=useNavigation()
    const handleLogin = ()=>{
             navigation.navigate("pagingtwo")
+   }
+   const handleSignup = ()=>{
+            navigation.navigate("pagingthree")
    } 
   return (
     <View>
@@ -25,7 +28,7 @@ const Pageone = () => {
                                        <Text style={styles.loginbuttontext}>Login</Text>
                </TouchableOpacity>
 
-                <TouchableOpacity>
+                <TouchableOpacity  onPress={handleSignup}>
                                        <Text  style={styles.signupbuttontext}>Sign-up</Text>
                </TouchableOpacity>
            </View>
@@ -81,11 +84,11 @@ loginbuttontext:{
 
 signupbuttontext:{
   
-    color:"grey",
+     color:"grey",
     fontFamily:Font.semiBold, 
-    fontSize:18,
-    marginLeft:20,
-    marginTop:13,
+     fontSize:18,
+    marginLeft:17,
+     marginTop:13,
 }
     
 })

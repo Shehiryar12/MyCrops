@@ -44,7 +44,7 @@ const Pagetwo = () => {
                 setSecureEntry( (pre) => !pre )
               }}
              >
-                                   <SimpleLineIcons name={"eye"}  size={20} marginHorizontal={7}/>
+                                   <SimpleLineIcons name={"eye"}  size={20} marginRight={13}/>
               
              </TouchableOpacity>
           </View>
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
 
 arrows:{
     fontSize:27,
-    // marginLeft:17,
+     marginLeft:17,
     marginVertical:10,
     backgroundColor:'grey',
     borderRadius:25,
@@ -105,7 +105,7 @@ inputcontainer:{
     flexDirection:'row',
     alignItems:'center',
     paddingLeft:14,
-    marginVertical:20,
+    marginVertical:14,
     marginRight:5,
      
 },
@@ -173,6 +173,7 @@ footerContainer:{
   marginVertical:10,
   flexDirection:"row",
   justifyContent:"center",
+  gap:3,
   
 },
 
@@ -182,7 +183,7 @@ accounttext:{
 },
 
 Signuuptext:{
-  marginLeft:3,
+  
   fontFamily:Font.semiBold,
   marginVertical:10,
   
