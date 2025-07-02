@@ -8,9 +8,10 @@ import {
 } from 'react-native';
 import React, { useState } from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import Octicons from 'react-native-vector-icons/Octicons';
 import { Font } from '../Constant/Fonts';
 import { useNavigation } from '@react-navigation/native';
+import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 
 const Pagethree = () => {
   const navigation = useNavigation();
@@ -32,7 +33,11 @@ const Pagethree = () => {
       <View style={styles.formContainer}>
         <View style={styles.inputcontainer}>
           <Ionicons name={'mail-outline'} size={25} />
-          <TextInput style={styles.textInput} placeholder="Enter your email" keyboardType='email-address' />
+          <TextInput
+            style={styles.textInput}
+            placeholder="Enter your email"
+            keyboardType="email-address"
+          />
         </View>
 
         <View style={styles.inputcontainer}>
@@ -45,10 +50,11 @@ const Pagethree = () => {
 
           <TouchableOpacity
             onPress={() => {
-              setSecureEntry(pre => !pre);
+              setSecureEntry(!secureEntry);
             }}
           >
-            <SimpleLineIcons name={'eye'} size={20} marginRight={13} />
+              <Octicons name={secureEntry ? 'eye-closed' : 'eye'} size={20} marginRight={13} />
+            
           </TouchableOpacity>
         </View>
 
