@@ -1,18 +1,17 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import School from './Src/Screens/School'
-import TestingScreen from './Src/Screens/TestingScreen'
-
-
-
+import Userreference from './Src/Screens/UserCall'
+import UserCall from './Src/Screens/UserCall'
 
 export default function App() {
 
   return (
     
- <School/>
-
-   
+    <View>
+                <UserCall/>
+              
+    </View>
+     
 
   )
 }

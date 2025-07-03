@@ -1,27 +1,21 @@
 import { Button, StyleSheet, Text, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 
-const UseEffect= () => {
-
-   const [count,setCount]=useState("")
+const Use = () => {
+  const [count,setCount]=useState(5);
   useEffect(()=>{
-    console.log("Hello")
-  })
-  
+    console.log("hey");
+    
+  },[count])
   return (
-
     <View>
-      <Text style={styles.text}>program</Text> 
-      <Button title="Update Count" onPress={()=>setCount()}/>
+      <Text>UseEffect</Text>
+      <Text style={styles.count}>Current Count: {count}</Text>
+      <Button title="update count" onPress={()=>setCount(count + 2)}/>
     </View>
-
   )
 }
 
-export default UseEffect
+export default Use
 
-const styles = StyleSheet.create({
-  text:{
-    fontSize:20,
-  }
-})
+const styles = StyleSheet.create({})
