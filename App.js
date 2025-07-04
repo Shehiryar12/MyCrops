@@ -1,18 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Userreference from './Src/Screens/UserCall'
-import UserCall from './Src/Screens/UserCall'
+import FlexWrap from './Src/Screens/FlexWrap'
 
 export default function App() {
 
   return (
-    
-    <View>
-                <UserCall/>
-              
-    </View>
-     
-
+              <FlexWrap/>
   )
 }
 
