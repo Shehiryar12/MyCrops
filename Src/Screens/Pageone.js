@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 
 const Pageone = () => {
 
-    const navigation=useNavigation()
+    const navigation=useNavigation();
    const handleLogin = ()=>{
             navigation.navigate("pagingtwo")
    }

@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
         textAlign:'center',
         marginTop:35,   
         fontFamily:Font.bold
-
         
    },
 

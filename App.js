@@ -1,12 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import Pageone from './Src/Screens/Pageone'
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import Register from './Src/Screens/Register';
+import TestingInput from './Src/Screens/TestingInput';
+import RegisterTwo from './Src/Screens/RegisterTwo';
+
 
 export default function App() {
-
   return (
-         <Pageone/>
-  )
+    
+  <RegisterTwo/>
+  );
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

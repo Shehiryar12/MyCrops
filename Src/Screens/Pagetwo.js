@@ -33,7 +33,7 @@ const Pagetwo = () => {
             <TextInput style={styles.textInput} placeholder='Enter your email'/>
           </View>
 
-           <View style={styles.inputcontainer}>
+           <View style={styles.inputcontainer} >
             
            
             <SimpleLineIcons name={"lock"}  size={25} marginHorizontal={1}/>
