@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
         color:'green',        
      },
      pass:{
-
+        //  marginRight:10,
+        // paddingRight:5,
      }
 })

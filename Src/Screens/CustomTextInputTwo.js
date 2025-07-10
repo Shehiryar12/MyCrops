@@ -14,7 +14,7 @@ const CustomTextInputTwo = (props) => {
                   style={{flex:1}}
        /> 
        <TouchableOpacity onPress={() => setSecure(!secure)}>
-        <Feather name={secure ? 'eye-off' :"eye" }  size={20}/>  
+        <Feather name={secure ? 'eye-off' :"eye" }  size={20} style={styles.icon}/>  
        </TouchableOpacity> 
     </View>
   )
@@ -33,6 +33,12 @@ const styles = StyleSheet.create({
         borderRadius:10,
         // height:70,
         paddingVertical:5,
+        // marginRight:15,
+    },
+
+    icon:{
+      // marginRight:5,
+      paddingRight:7,
     }
 
 })

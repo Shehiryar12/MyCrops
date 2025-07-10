@@ -1,14 +1,13 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import Register from './Src/Screens/Register';
-import TestingInput from './Src/Screens/TestingInput';
-import RegisterTwo from './Src/Screens/RegisterTwo';
+import MainNavigator from './Src/Screens/MainNavigator';
 
 
 export default function App() {
   return (
-    
-  <RegisterTwo/>
+  
+    <MainNavigator/>
+  
   );
 }
 
