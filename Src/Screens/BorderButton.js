@@ -3,12 +3,12 @@ import React from 'react'
 import { THEME_COLOR } from './Utils/colors'
 import { TUTOR_TITLE } from './Utils/string'
 
-const BorderButton = ({title,onClick}) => {
+const BorderButton = ({title,Click}) => {
   return (
     <View>
-      <TouchableOpacity style={styles.btn} onPress={onClick}>
+      <TouchableOpacity style={styles.btn} onPress={Click}>
                      
-                    <Text>{title}</Text> 
+                    <Text style={styles.texttitle}>{title}</Text> 
         </TouchableOpacity>
     </View>
   )
@@ -24,5 +24,11 @@ const styles = StyleSheet.create({
         backgroundColor: THEME_COLOR,
         alignSelf:'center',
         borderRadius:10,
+    },
+    texttitle:{
+      alignSelf:'center',
+      fontWeight:600,
+      fontSize:15,
+      color:"white",
     }
 })

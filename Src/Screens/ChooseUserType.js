@@ -1,17 +1,31 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { BG_COLOR } from './Utils/colors'
+import { BG_COLOR, WHITE } from './Utils/colors'
 
 import BorderButton from './BorderButton'
-import { SELECT_USER, TUTOR_TITLE } from './Utils/string'
+import { LEARNER_TITLE, SELECT_USER, TUTOR_TITLE } from './Utils/string'
+import BgButton from './BgButton'
+import { useNavigation } from '@react-navigation/native'
 
 const ChooseUserType = () => {
+  const navigation=useNavigation();
   return (
     <View style={styles.container}>
+
       <Image source={require('../Screens/client.jpg')} style={styles.client}/>
+
       <Text style={styles.heading}>{SELECT_USER}</Text>
-      <BorderButton title={TUTOR_TITLE}/>
+
+       <BorderButton title={TUTOR_TITLE} Click={() => {
+        // console.log("Button Pressed")
+  navigation.navigate("Log")
+}} />
+
+      
+        <BgButton title={LEARNER_TITLE} />
+     
     </View>
+    
   )
 }
 
@@ -29,7 +43,7 @@ const styles = StyleSheet.create({
   heading:{
     fontSize:18,
     textAlign:'center',
-    fontWeight: '600',
+    // fontWeight: '600',
     marginVertical:13,
   }
 })
