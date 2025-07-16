@@ -2,6 +2,7 @@ import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Feather'
 import IconEntypo from 'react-native-vector-icons/Entypo'
+import CardComponent from './CardComponent'
 
 const Crops = () => {
   return (
@@ -29,15 +30,13 @@ const Crops = () => {
           <Text style={styles.innertexttwo}>24*</Text> 
         </View>
     </View>
-
-  
-
-     
-   
-
- 
-   
+    <CardComponent title="LAND RECORD" image={require("../Screens/imagone.jpg")} />
+    <CardComponent title="CROPS TO INSURE" image={require("../Screens/insure.png")} />
+    <CardComponent title="LOSS ASSESSMENT" image={require("../Screens/imagethree.jpg")} />
+    
+    
     </View>
+    
   )
 }
 
@@ -98,24 +97,7 @@ const styles = StyleSheet.create({
     innertexttwo:{
         color:"white",
     },
-    card:{
-        borderWidth:1,
-        width:155,
-        height:155,
-        backgroundColor:'white',
-        elevation:6,
-        borderRadius:14,
-        borderColor:"#009245A3",
-        marginLeft:17,
-        marginVertical:28,
-        alignItems:'center',
-        justifyContent:'center',
-    },
 
-    landtext:{
-         fontSize:12,
-         marginTop:12,
-    }
   
  
    
