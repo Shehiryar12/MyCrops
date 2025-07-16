@@ -25,9 +25,9 @@ const styles = StyleSheet.create({
         borderRadius:14,
         borderColor:"#009245A3",
         marginLeft:17,
-        marginVertical:28,
         alignItems:'center',
         justifyContent:'center',
+        marginTop:20,
     },
     imageone:{
         width:85,

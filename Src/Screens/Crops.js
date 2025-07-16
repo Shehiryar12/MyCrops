@@ -32,7 +32,8 @@ const Crops = () => {
     </View>
 
     <TextComponents title={"LAND RECORD"} image={require("../../Src/Screens/imagone.jpg")}/>
-    <TextComponents title={"CROP TO INSURE"} image={require("../../Src/Screens/imagone.jpg")}/>
+    <TextComponents title={"CROP TO INSURE"} image={require("../../Src/Screens/insure.png")}/>
+    <TextComponents title={"CROP TO INSURE"} image={require("../../Src/Screens/imagethree.jpg")}/>
     
 
      
