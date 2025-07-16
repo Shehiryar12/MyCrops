@@ -1,15 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Feather'
 import IconEntypo from 'react-native-vector-icons/Entypo'
-import {Fonts} from "react-native-asset/fonts"
+import TextComponents from './TextComponents'
 
 const Crops = () => {
   return (
     <View style={styles.container}>
-    
-   
-
 
     <View style={styles.inner}> 
           <Icon name="menu" size={30} color="green" style={styles.iconstyle} />
@@ -20,17 +17,28 @@ const Crops = () => {
           <IconEntypo name="calendar"  color="black" size={18} />
      </View>
     </View>
+
+    <View style={styles.box}>
      
-     <View style={styles.box1}>
+        <View style={styles.box1}>
             <Text style={styles.innertext}>Farmer</Text>
-            <Text style={styles.innertext}>26KM/H</Text>                
-     </View>
+            <Text style={styles.innertext}>26km/h</Text>                
+        </View>
 
-     <View style={styles.box2}> 
-         <Text>ARSHAD ALI</Text> 
-          <Text>24*</Text> 
-     </View>
+        <View style={styles.box2}> 
+         <Text style={styles.innertexttwo}>ARSHAD ALI</Text> 
+          <Text style={styles.innertexttwo}>24*</Text> 
+        </View>
+    </View>
 
+    <TextComponents title={"LAND RECORD"} image={require("../../Src/Screens/imagone.jpg")}/>
+    <TextComponents title={"CROP TO INSURE"} image={require("../../Src/Screens/imagone.jpg")}/>
+    
+
+     
+   
+
+ 
    
     </View>
   )
@@ -68,28 +76,51 @@ const styles = StyleSheet.create({
        
         flexDirection:'row',
         justifyContent:'space-between',
-        marginHorizontal:15,
-        marginVertical:15,   
-        height:100,
-        borderRadius:10,  
-        // backgroundColor:'green',
-        // color:"green",
-        
-
+        marginHorizontal:15,   
+        borderRadius:10,     
     },
     innertext:{
-        // backgroundColor:'red'
-        color:"green",
+        color:"white",
         marginVertical:5,
         marginHorizontal:8,
     },
-    innerBox:{
-        flexDirection:'coloumn',
-    },
+
     box2:{
         flexDirection:'row',
         justifyContent:'space-between',
+        marginHorizontal:21,     
+    },
+   
+    box:{
+        backgroundColor:'green',
+        marginHorizontal:20,
+        marginTop:10,
+        height:70,
+        borderRadius:8,
+    },
+    innertexttwo:{
+        color:"white",
+    },
+    card:{
+        borderWidth:1,
+        width:155,
+        height:155,
+        backgroundColor:'white',
+        elevation:6,
+        borderRadius:14,
+        borderColor:"#009245A3",
+        marginLeft:17,
+        marginVertical:28,
+        alignItems:'center',
+        justifyContent:'center',
+    },
+
+    landtext:{
+         fontSize:12,
+         marginTop:12,
     }
+  
+ 
    
    
  
