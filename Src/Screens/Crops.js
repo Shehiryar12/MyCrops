@@ -2,7 +2,6 @@ import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Feather'
 import IconEntypo from 'react-native-vector-icons/Entypo'
-import TextComponents from './TextComponents'
 
 const Crops = () => {
   return (
@@ -31,10 +30,7 @@ const Crops = () => {
         </View>
     </View>
 
-    <TextComponents title={"LAND RECORD"} image={require("../../Src/Screens/imagone.jpg")}/>
-    <TextComponents title={"CROP TO INSURE"} image={require("../../Src/Screens/insure.png")}/>
-    <TextComponents title={"CROP TO INSURE"} image={require("../../Src/Screens/imagethree.jpg")}/>
-    
+  
 
      
    
