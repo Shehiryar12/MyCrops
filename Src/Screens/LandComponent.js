@@ -1,20 +1,22 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import LandComponent from './LandComponent'
 
-const AddLand = () => {
+const LandComponent = (props) => {
   return (
-   <View style={styles.fullcontainer}> 
-      <LandComponent title="Upload Land Ownership Certification" image={require("../Screens/land.jpg")}/>
-
-    </View>
+    
+          <View style={styles.container}>
+               <Image source={props.image} style={styles.imagestyle}/>
+               <Text style={styles.textcolor} >{props.title}</Text>
+          </View>
+  
   )
 }
 
-export default AddLand
+export default LandComponent
 
 const styles = StyleSheet.create({
-    fullcontainer:{
+
+     fullcontainer:{
         alignItems:'center',     
     },
 
@@ -38,5 +40,4 @@ const styles = StyleSheet.create({
         fontSize:16,
         marginTop:20, 
     },
-    
 })
