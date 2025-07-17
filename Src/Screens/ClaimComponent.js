@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     fontFamily:Font.medium,
     },
     button:{
-         width:125,
+         width:128,
          height:37,
          borderRadius:23, 
          borderWidth:1,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
         justifyContent:"space-between",
         flexDirection:'row',
         alignItems:'center',
-        paddingHorizontal:20,
+        paddingHorizontal:30,
     },
     contacttext:{
         color:'green',

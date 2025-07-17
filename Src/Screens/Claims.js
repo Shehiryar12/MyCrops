@@ -6,7 +6,7 @@ const Claims = () => {
   return (
    <View style={styles.fullcontainer} >
   
-  <ClaimComponent  title="Tobaccooo" status="Processing" description="Your Claim is processing, you should in touch with use." Date="25 Dec, 2024"
+  <ClaimComponent  title="Tobaccooo" status="Processing" description="Your Claim is processing, you should in touch with us." Date="25 Dec, 2024"
                    contact="Contact Us"/>
     
     </View>
