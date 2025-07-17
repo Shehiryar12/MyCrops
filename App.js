@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
-import Learn from './course/Learn';
-import Crops from './Src/Screens/Crops';
+import AddLand from './Src/Screens/AddLand';
+
 
 
 export default function App() {
   return (
-            <Crops/>
-  
+          
+        <AddLand/>
   )  
 }
 

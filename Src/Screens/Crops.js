@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/Feather'
 import IconEntypo from 'react-native-vector-icons/Entypo'
 import CardComponent from './CardComponent'
 
+
 const Crops = () => {
   return (
     <View style={styles.container}>
@@ -54,7 +55,7 @@ const styles = StyleSheet.create({
     flexDirection:"row",
     justifyContent:'space-between',  
     marginHorizontal:12,
-    marginVertical:10,
+    marginVertical:12,
     },
  
     innertwo:{
@@ -92,7 +93,7 @@ const styles = StyleSheet.create({
         marginHorizontal:20,
         marginTop:10,
         height:70,
-        borderRadius:8,
+        borderRadius:10,
     },
     innertexttwo:{
         color:"white",
