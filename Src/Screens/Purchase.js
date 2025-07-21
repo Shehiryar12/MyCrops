@@ -4,15 +4,20 @@ import { Font } from '../Constant/Fonts'
 
 const Buying = () => {
   return (
+   <View>
     <View style={styles.container}>
          <Image source={require("../Screens/coca.jpg")} style={styles.imagestyle}/>
          <Text style={styles.description}>Stick Class Dispersing and adhesive</Text>
-     
-         <View style={styles.numtext}>
-             <Text style={styles.number1}>-</Text>   
-         </View>
-          
-          <View style={styles.innercontainer}>
+        
+
+          <View style={styles.numbers}>
+            <Text style={styles.numone}>-</Text>
+            <Text style={styles.numtwo}> 2 </Text>
+            <Text style={styles.numone}>+</Text>
+            </View> 
+
+            
+    <View style={styles.innercontainer}>
                      <TouchableOpacity style={styles.button}>   
                         <Text style={styles.buttontext}>Delete Item</Text>
                      </TouchableOpacity>
@@ -20,6 +25,8 @@ const Buying = () => {
           </View>
   
     </View>
+
+    </View>       
   )
 }
 
@@ -27,23 +34,24 @@ export default Buying
 
 const styles = StyleSheet.create({
     container:{
-        width:212,
-        height:295,
+        width:183,
+        height:235,
         backgroundColor:'white',
         borderRadius:13,
         elevation:9,
         alignItems:'center',
        marginTop:70,
+       marginHorizontal:10,
     },
     imagestyle:{
-        width:152,
-        height:185,
-        marginTop:10,     
+        width:100,
+        height:130,
+           
     },
     description:{
         fontFamily:Font.bold,
         fontSize:12,
-        width:150,      
+        width:155,      
     },
     itemstyle:{
         color:"white",   
@@ -55,6 +63,7 @@ const styles = StyleSheet.create({
         borderRadius:8,
         alignItems:'center',
         justifyContent:'center',
+        // marginTop:4,
     
     },
     buttontext:{
@@ -66,21 +75,36 @@ const styles = StyleSheet.create({
     innercontainer:{
         flexDirection:'row',
         justifyContent:'space-between',
-        marginTop:8
+        marginTop:13,
+      
     },
     price:{
-        paddingLeft:20,
-        fontFamily:Font.semiBold,
+        paddingLeft:10,
+        fontFamily:Font.bold,
     },
-    
-    number1:{     
-        // widh:1,
-        // borderWidth:1,   
-        // paddingRight:190,
-        // width:1,
-        // height:1,
-        // backgroundColor:'red',   
+    numbers:{
+        flexDirection:'row',
+        // backgroundColor:'red',
+        // flex:1,
+        width:160,
+        // height:10,    
+    },
+    numtwo:{
+       fontSize:12,
+    },
+
+     numone:{
+       fontSize:12,
+      borderRadius:5,
+        borderColor:'#707070',
+        borderWidth:1,
+       height:17,
+       paddingLeft:6,
+        
+     width:20,
     }
+   
     
+   
    
 })
