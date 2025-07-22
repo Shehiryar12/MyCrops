@@ -1,6 +1,5 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import Claims from './Claims'
 import Icon from 'react-native-vector-icons/Feather'
 import { Font } from '../Constant/Fonts'
 
