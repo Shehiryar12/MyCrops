@@ -1,16 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
-
-import Buying from './Src/Screens/Purchase';
-import PurchaseComponent from './Src/Screens/PurchaseComponent';
+import Compensation from './Src/Screens/Compensation';
 
 
 
 export default function App() {
   return (
           
-        <Buying/>
-        // <PurchaseComponent/>
+        <Compensation/>
+       
   )  
 }
 

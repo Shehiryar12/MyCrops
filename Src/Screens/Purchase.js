@@ -7,7 +7,8 @@ const Buying = () => {
     <View>
       <PurchaseComponent
        Image={require('../Screens/coca.jpg')}
-        title="Stick Class Dispersing and adhesive lvkem kejbkebf kajwbfkebf"
+        title="Stick Class Dispersing and adhesive"
+        price="RS.2800"
       />
     </View>
   );

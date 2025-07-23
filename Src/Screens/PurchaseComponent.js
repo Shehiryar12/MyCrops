@@ -32,7 +32,7 @@ const PurchaseComponent = (props) => {
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttontext}>Delete Item</Text>
         </TouchableOpacity>
-        <Text style={styles.price}>RS. 2800</Text>
+        <Text style={styles.price}>{props.price}</Text>
       </View>
     </View>
   );
