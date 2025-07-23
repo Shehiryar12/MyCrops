@@ -5,7 +5,9 @@ import CompensationComponent from './CompensationComponent';
 const Compensation = () => {
   return (
     <View style={styles.container}>
-        <CompensationComponent title="Tobacco" process="Processing" date="25 Dec, 2024"/>
+        <CompensationComponent title="Tobacco" process="Processing" date="25 Dec, 2024" claim="Your Claim is processing, you should in touch with us."  payment="View Payment"/>
+        <CompensationComponent title="Wheat" process="Settled" date="10 Nov, 2024" claim="Your Claim has been settled, you can"  payment="View Payment"/>
+        <CompensationComponent title="Wheat" process="Cancelled" date="10 Nov, 2024" claim="Your Claim is processing, you should in touch with us."  payment="View Payment"/> 
     </View>
   );
 };
@@ -21,6 +23,8 @@ const styles = StyleSheet.create({
     // marginHorizontal: 23, //ya marginLeft
     // borderRadius: 5,
     // padding:10,
+   
+    
   },
 //   status: {
 //     flexDirection: 'row',
@@ -73,4 +77,7 @@ const styles = StyleSheet.create({
 //     fontSize: 10,
 //     color: '#646464',
 //   },
+wheat:{
+    // marginTop:50,
+}
 });

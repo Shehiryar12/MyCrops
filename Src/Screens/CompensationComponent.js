@@ -15,7 +15,7 @@ const CompensationComponent = (props) => {
     
             <View style={styles.claim}>
               <Text style={styles.claimtext}>
-                Your Claim is processing, you should in touch with us.
+                {props.claim}
               </Text>
             </View>
     
@@ -27,7 +27,7 @@ const CompensationComponent = (props) => {
 
               <TouchableOpacity style={styles.payment}>
                 <MaterialIcons name="payment" size={15} color={'green'} padding={5} />
-                     <Text style={styles.paymenttext}>View Payment</Text>
+                     <Text style={styles.paymenttext}>{props.payment}</Text>
               </TouchableOpacity>
     
               <Text style={styles.datetext}>{props.date}</Text>
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 23, //ya marginLeft
         borderRadius: 5,
         padding:10,
+        marginBottom:20,
       },
       status: {
         flexDirection: 'row',
@@ -70,6 +71,7 @@ const styles = StyleSheet.create({
         fontSize: 10,
         color: '#646464',
         fontFamily: Font.medium,
+        // width:200,
       },
       contact: {
         width: 100,
