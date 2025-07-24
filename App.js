@@ -1,13 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
-import Compensation from './Src/Screens/Compensation';
-
+import Receipt from './Src/Screens/Receipt';
 
 
 export default function App() {
   return (
           
-        <Compensation/>
+       <Receipt/>
        
   )  
 }

@@ -10,7 +10,7 @@ const CompensationComponent = (props) => {
     
             <View style={styles.status}>
               <Text style={styles.Namestatus}>{props.title}</Text>
-              <Text style={styles.Processstatus}>{props.process}</Text>
+              <Text style={[styles.Processstatus,{color:props.titleColor}]}>{props.process}</Text>
             </View>
     
             <View style={styles.claim}>
@@ -22,7 +22,7 @@ const CompensationComponent = (props) => {
           <View style={styles.contactcontainer}>
               <TouchableOpacity style={styles.contact}>
                 <Icon name="phone-call" size={10} color={'green'} padding={5} />
-                <Text style={styles.contacttext}>Contact Us</Text>
+                <Text style={[styles.contacttext,{color:props.contactColor}]}>Contact Us</Text>
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.payment}>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
       },
       Processstatus: {
-        color: '#F39E1E',
+        // color: '#F39E1E',
         fontFamily: Font.medium,
         fontSize: 10,
       },
