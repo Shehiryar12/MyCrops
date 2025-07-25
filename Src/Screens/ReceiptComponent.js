@@ -33,15 +33,22 @@ const ReceiptComponent = (props) => {
           <TextComp product="Stick Class Dispersing and adhesive" item="3" price="5600"/>
           <TextComp product="Strong plus High phosphor that increase" item="2" price="5200"/>
 
-        <View style={styles.dotting}>
+     
           <View style={styles.dot}/>
            <View style={styles.combine}>
-              <Text style={[styles.texting,{backgroundColor:'red'}]}>Total</Text>
-              <Text style={[styles.texting,{backgroundColor:'green',textAlign:'right',width:100}]}>4</Text>
-              <Text style={[styles.texting,{backgroundColor:'yellow'}]}>10800</Text>
-           </View>   
-          </View>             
-        </View>  
+              <Text style={[styles.texting,{fontSize:11,fontFamily:Font.semiBold}]}>Total</Text>
+              <Text style={[styles.texting,{textAlign:'right',width:95,fontSize:11,fontFamily:Font.semiBold}]}>4</Text>
+              <Text style={[styles.texting,{fontSize:11,fontFamily:Font.semiBold}]}>10800</Text>  
+           </View> 
+          <View style={styles.dotline}/>  
+              <View style={styles.claiming}>
+                <Text style={[styles.claim,{fontSize:11,color:"white",fontFamily:Font.semiBold}]}>Claim Amount</Text>
+                <Text style={[styles.total,{color:"white",fontSize:11,fontFamily:Font.semiBold}]}>2,000,000</Text>
+              </View>
+          </View>  
+
+         
+            
                  
           
     </View>
@@ -94,11 +101,26 @@ const styles = StyleSheet.create({
        borderStyle:'dashed',    
                 
     },
+    combine:{
+      flexDirection:'row',
+      justifyContent:'space-between', 
+      marginTop:10, 
+    },
     texting:{
         color:"white",
     },
-    combine:{
+    dotline:{
+      width:"100%",
+      borderBottomWidth:1,
+       borderBottomColor: '#AAAAAA',   
+      borderStyle:'dashed',
+      marginTop:5,
+    },
+    claiming:{
       flexDirection:'row',
-      justifyContent:'space-between',
-    }
+      justifyContent:'space-between',  
+      marginTop:20,
+    },
+    
+    
 })
