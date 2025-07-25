@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
-import Receipt from './Src/Screens/Receipt';
+import Ownership from './Src/Ownership';
 
 
 export default function App() {
   return (
           
-       <Receipt/>
+       <Ownership/>
        
   )  
 }
