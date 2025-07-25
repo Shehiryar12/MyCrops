@@ -12,6 +12,8 @@ const Compensation = () => {
         claim="Your Claim is processing, you should in touch with us."
         payment="View Payment"
         titleColor="#F39E1E"
+        contactColor="green"
+        
       />
       <CompensationComponent
         title="Wheat"
@@ -19,7 +21,8 @@ const Compensation = () => {
         date="10 Nov, 2024"
         claim="Your Claim has been settled, you can"
         payment="View Payment"
-       
+         titleColor="green"
+         contactColor="green"
       />
       <CompensationComponent
         title="Wheat"
@@ -27,6 +30,8 @@ const Compensation = () => {
         date="10 Nov, 2024"
         claim="Your Claim is processing, you should in touch with us."
         payment="View Payment"
+         titleColor="red"
+         contactColor="green"
       />
     </View>
   );

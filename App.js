@@ -1,12 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
-import Ownership from './Src/Ownership';
+
+import Compensation from './Src/Screens/Compensation';
 
 
 export default function App() {
   return (
           
-       <Ownership/>
+       
+       <Compensation/>
        
   )  
 }
