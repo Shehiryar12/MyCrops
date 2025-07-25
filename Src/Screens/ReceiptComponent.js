@@ -32,12 +32,18 @@ const ReceiptComponent = (props) => {
          
           <TextComp product="Stick Class Dispersing and adhesive" item="3" price="5600"/>
           <TextComp product="Strong plus High phosphor that increase" item="2" price="5200"/>
-          
+
+        <View style={styles.dotting}>
           <View style={styles.dot}/>
-                        
-        
+           <View style={styles.combine}>
+              <Text style={[styles.texting,{backgroundColor:'red'}]}>Total</Text>
+              <Text style={[styles.texting,{backgroundColor:'green',textAlign:'right',width:100}]}>4</Text>
+              <Text style={[styles.texting,{backgroundColor:'yellow'}]}>10800</Text>
+           </View>   
+          </View>             
+        </View>  
                  
-          </View>
+          
     </View>
   )
 }
@@ -66,7 +72,6 @@ const styles = StyleSheet.create({
       },
       producttext: {
         color: '#86BC41',
-        fontSize: 14,
         fontFamily: Font.semiBold,
         marginTop:10,
       },
@@ -76,10 +81,6 @@ const styles = StyleSheet.create({
         fontFamily: Font.regular,
         marginTop:7,
       },
-      Productstwo:{
-        flexDirection:'row',
-        justifyContent:'space-between',
-      },
     
     linetwo:{
         color:"#DBD8D8",
@@ -87,10 +88,17 @@ const styles = StyleSheet.create({
     },
     dot:{
        borderBottomColor: '#AAAAAA',   
-       borderBottomWidth: 2,
+       borderBottomWidth: 1,
        width: '100%',
-       marginTop:100,                  
-     
-       
+       marginTop:100, 
+       borderStyle:'dashed',    
+                
+    },
+    texting:{
+        color:"white",
+    },
+    combine:{
+      flexDirection:'row',
+      justifyContent:'space-between',
     }
 })
