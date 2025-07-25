@@ -30,7 +30,7 @@ const Compensation = () => {
         date="10 Nov, 2024"
         claim="Your Claim is processing, you should in touch with us."
         payment="View Payment"
-         titleColor="red"
+         titleColor="#AC1318"
          contactColor="green"
       />
     </View>
