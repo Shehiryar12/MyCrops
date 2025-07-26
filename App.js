@@ -1,14 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
-import Ownership from './Src/Ownership';
+import Submit from './Src/Submit';
 
 
 export default function App() {
   return (
           
-       
-      <Ownership/>
-       
+    <Submit/>      
+        
   )  
 }
 
