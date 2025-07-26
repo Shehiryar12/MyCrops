@@ -48,12 +48,8 @@ const styles = StyleSheet.create({
   headingContainer: {
     flexDirection: 'row',
     marginTop: 13,
-    //  backgroundColor:'red',
   },
   heading: {
-    // alignItems:"center",
-    // backgroundColor:"red",
-    // justifyContent:'center',
     marginLeft: 63,
     fontFamily: Font.semiBold,
   },
@@ -98,25 +94,20 @@ const styles = StyleSheet.create({
     paddingTop:10,
     paddingRight:5,
     paddingLeft:5,
-    flexWrap:"wrap",
-    // padding:7,
-    // marginLeft:10,
-    // justifyContent:"space-between",
-  
+    flexWrap:"wrap", 
   },
   grassstyle:{
      width:95,
      height:95,
      backgroundColor:'red',
      borderRadius:13, 
-    //  padding:10,
-    // justifyContent:'space-between',
-    // marginTop:4,    
+    
   },
   grassfour:{
     paddingTop:10,
     flexDirection:'row',
     marginLeft:4,
+    paddingLeft:4,
   },
   plus:{
     width:95,
@@ -125,8 +116,4 @@ const styles = StyleSheet.create({
     borderWidth:1,
     borderColor:'#DBD8D8',
   },
-  // grassimage:{
-  //   paddingLeft:3,
-  // }
-
 });
