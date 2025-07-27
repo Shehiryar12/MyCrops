@@ -60,7 +60,7 @@ const Home = () => {
                  </View>
                  <View style={styles.landboxone}> 
                    <Image source={require("../Drawer/landsix.png")} style={styles.landone}/>
-                   <Text style={styles.textstyle}>LOSS ASSESSMENT</Text>
+                   <Text style={styles.textstyle}>AUTHORIZED DEALERSHIP</Text>
                  </View>
                             
                                 
@@ -160,6 +160,7 @@ landone:{
   height:65,
 },
 textstyle:{
-  fontSize:10,
+  fontSize:8,
+  fontFamily:Font.semiBold,
 }
 });

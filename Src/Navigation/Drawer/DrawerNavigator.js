@@ -14,7 +14,7 @@ const Screen = () => {
   return (
     <NavigationContainer>
       <Drawer.Navigator screenOptions={{ headerShown: false ,drawerActiveBackgroundColor:"#f2f2f2",color:'black'}}>
-        <Drawer.Screen name="MyClaim" component={Home}  options={{ drawerIcon:({})=>{
+        <Drawer.Screen name="MyClaims" component={Home}  options={{ drawerIcon:({})=>{
           return <MaterialIcons name="assignment" size={20} color={"green"}/>
         }}}/>
         <Drawer.Screen name="My Purchase" component={Settings} options={{ drawerIcon:({})=>{
