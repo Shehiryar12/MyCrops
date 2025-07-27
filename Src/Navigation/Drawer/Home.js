@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { useNavigation } from '@react-navigation/native';
 import { Font } from '../../Constant/Fonts';
@@ -33,6 +33,38 @@ const Home = () => {
               <Text style={styles.boxtexttwo}>ARSHAD ALI</Text>
                <Text style={styles.boxtexttwo}>24*</Text>
               </View>     
+         </View>
+
+         <View style={styles.landingbox}>
+
+          
+                 <View style={styles.landboxone}> 
+                       <Image source={require("../Drawer/landone.jpg")} style={styles.landone}/>
+                       <Text style={styles.textstyle}>LAND RECORD</Text>
+                 </View> 
+                 <View style={styles.landboxone}>
+                  <Image source={require("../Drawer/landtwo.png")} style={styles.landone}/>
+                    <Text style={styles.textstyle}>LAND OWNERSHIP DETAILS</Text>
+                   </View>
+                 <View style={styles.landboxone}> 
+                   <Image source={require("../Drawer/landthree.jpg")} style={styles.landone}/>
+                   <Text style={styles.textstyle}>CROP TO INSURE</Text>
+                 </View>
+                 <View style={styles.landboxone}> 
+                   <Image source={require("../Drawer/landfour.png")} style={styles.landone}/>
+                   <Text style={styles.textstyle}>LOSS COMPENSATION</Text>
+                 </View>
+                 <View style={styles.landboxone}> 
+                   <Image source={require("../Drawer/landfive.jpg")} style={styles.landone}/>
+                   <Text style={styles.textstyle}>LOSS ASSESSMENT</Text>
+                 </View>
+                 <View style={styles.landboxone}> 
+                   <Image source={require("../Drawer/landsix.png")} style={styles.landone}/>
+                   <Text style={styles.textstyle}>LOSS ASSESSMENT</Text>
+                 </View>
+                            
+                                
+                                 
          </View>
     
     </View>
@@ -102,5 +134,32 @@ const styles = StyleSheet.create({
   fontSize:18,
   fontFamily:Font.semiBold,
   color:"white",
- }
+ },
+ landingbox:{
+   flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: 'space-between',
+  paddingHorizontal:15,
+ },
+ landboxone:{
+    width:140,
+    height:143,
+    marginTop:20,
+    marginLeft:10,
+    // borderWidth:1,
+    borderColor:"#009245A3",
+    borderRadius:15,
+    elevation:15,
+    backgroundColor:'white',
+    justifyContent:'center',
+    // textAlign:'center',
+    alignItems:'center',
+ },
+landone:{
+  width:65,
+  height:65,
+},
+textstyle:{
+  fontSize:10,
+}
 });

@@ -14,16 +14,16 @@ const Screen = () => {
   return (
     <NavigationContainer>
       <Drawer.Navigator screenOptions={{ headerShown: false ,drawerActiveBackgroundColor:"#f2f2f2",color:'black'}}>
-        <Drawer.Screen name="MyClaim" component={Home}  options={{ drawerIcon:({color,size})=>{
+        <Drawer.Screen name="MyClaim" component={Home}  options={{ drawerIcon:({})=>{
           return <MaterialIcons name="assignment" size={20} color={"green"}/>
         }}}/>
-        <Drawer.Screen name="My Purchase" component={Settings} options={{ drawerIcon:({color,size})=>{
+        <Drawer.Screen name="My Purchase" component={Settings} options={{ drawerIcon:({})=>{
           return <MaterialIcons name="add-shopping-cart" size={20} color={"green"}/>
         }}}/>
-        <Drawer.Screen name="Terms & condition" component={About} options={{ drawerIcon:({color,size})=>{
+        <Drawer.Screen name="Terms & condition" component={About} options={{ drawerIcon:({})=>{
           return <MaterialIcons name="content-paste" size={20} color={"green"}/>
         }}}/>
-        <Drawer.Screen name="About us" component={Data} options={{ drawerIcon:({color,size})=>{
+        <Drawer.Screen name="About us" component={Data} options={{ drawerIcon:({})=>{
           return <Octicons name="database" size={20} color={"green"}/>
         }}}/>
       </Drawer.Navigator>
