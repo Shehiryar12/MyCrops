@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
-import Submit from './Src/Submit';
+import Screen from './Src/Navigation/Drawer/DrawerNavigator';
+
 
 
 export default function App() {
   return (
           
-    <Submit/>      
-        
+  <Screen/>
   )  
 }
 
