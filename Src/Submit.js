@@ -25,14 +25,13 @@ const Submit = () => {
            <Image source={require("../Src/Screens/grassone.jpg")} style={styles.grassstyle}/>
            <Image source={require("../Src/Screens/grasstwo.jpg")} style={styles.grassstyle}/>
            <Image source={require("../Src/Screens/grassthree.jpg")} style={styles.grassstyle}/>  
-        <View style={styles.grassimage}>    
-         <View style={styles.grassfour}>             
-           <Image source={require("../Src/Screens/grassfour.jpg")} style={styles.grassstyle}/>
-           <Image source={require("../Src/Screens/grassfive.jpg")} style={styles.grassstyle}/>
-           <Text style={styles.plus}></Text>
-        </View>   
-        </View>         
-        </View>
+           <Image source={require("../Src/Screens/grassfour.jpg")} style={styles.grassing}/>
+           <Image source={require("../Src/Screens/grassfive.jpg")} style={styles.grassing}/> 
+         <View style={styles.outerimage}> 
+           <MaterialIcons name="keyboard-arrow-left" size={14} style={styles.innerimage}/>
+         </View>   
+          </View>     
+     
         
         
       </View>
@@ -94,26 +93,23 @@ const styles = StyleSheet.create({
     paddingTop:10,
     paddingRight:5,
     paddingLeft:5,
-    flexWrap:"wrap", 
+    flexWrap:"wrap",
   },
   grassstyle:{
      width:95,
      height:95,
-     backgroundColor:'red',
-     borderRadius:13, 
+     borderRadius:13,   
+  },
+  grassing:{
+    width:95,
+    height:95,  
     
   },
-  grassfour:{
-    paddingTop:10,
-    flexDirection:'row',
-    marginLeft:4,
-    paddingLeft:4,
-  },
-  plus:{
-    width:95,
-    height:95,
+  outerimage:{
+    width:100,
+    height:100,
     borderRadius:13,
     borderWidth:1,
-    borderColor:'#DBD8D8',
-  },
+    borderColor:"#DBD8D8",
+  }
 });
