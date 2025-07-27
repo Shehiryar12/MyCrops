@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   },
   box: {
     width: 317,
-    height: 218,
+    height: 208,
     borderRadius: 13,
     marginTop: 20,
     marginLeft: 26,
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 2,
-    paddingTop: 10,
+    paddingTop: 6,
     paddingRight: 5,
     paddingLeft: 5,
     flexWrap: 'wrap',
