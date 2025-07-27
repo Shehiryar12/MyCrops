@@ -139,16 +139,16 @@ const styles = StyleSheet.create({
    flexDirection: 'row',
   flexWrap: 'wrap',
   justifyContent: 'space-between',
-  paddingHorizontal:15,
+  paddingHorizontal:18,
  },
  landboxone:{
     width:140,
     height:143,
     marginTop:20,
-    marginLeft:10,
+    // marginLeft:10,
     // borderWidth:1,
     borderColor:"#009245A3",
-    borderRadius:15,
+    borderRadius:12,
     elevation:15,
     backgroundColor:'white',
     justifyContent:'center',
@@ -160,7 +160,7 @@ landone:{
   height:65,
 },
 textstyle:{
-  fontSize:8,
+  fontSize:9,
   fontFamily:Font.semiBold,
 }
 });
