@@ -4,24 +4,24 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { Font } from './Constant/Fonts';
 
 const Submit = () => {
+
+  
   return (
-    <View>
+    <View style={styles.container}>
       <View style={styles.headingContainer}>
-        <View style={styles.headingicon}>
-          <MaterialIcons name="keyboard-arrow-left" size={24} marginLeft={10} />
-        </View>
+          <MaterialIcons name="keyboard-arrow-left" size={24} style={{margin: -7}} />
         <Text style={styles.heading}>Submit Insurance Claim</Text>
+        <View style={{width:14}}>
+          
+        </View>
       </View>
 
-      <View style={styles.FLood}>
         <Text style={styles.floodstyle}>FLOOD DAMAGE TO WHEAT CROP</Text>
         <Text style={styles.Incidentdate}>Date of Incident</Text>
         <Text style={styles.date}>Dec 12, 2024</Text>
         <Text style={styles.uploadpicture}>Upload Pictures</Text>
-      </View>
 
       <View style={styles.box}>
-        <View style={styles.imagepackage}>
           <Image
             source={require('../Src/Screens/grassone.jpg')}
             style={styles.grassstyle}
@@ -36,22 +36,19 @@ const Submit = () => {
           />
           <Image
             source={require('../Src/Screens/grassfour.jpg')}
-            style={styles.grassing}
+            style={styles.grassstyle}
           />
           <Image
             source={require('../Src/Screens/grassfive.jpg')}
-            style={styles.grassing}
+            style={styles.grassstyle}
           />
           <View style={styles.outerimage}>
-            <MaterialIcons name="add" size={30} style={styles.innerimage} />
+            <MaterialIcons name="add" size={30}  />
           </View>
-        </View>
       </View>
-      <View style={styles.button}>
-        <TouchableOpacity>
+        <TouchableOpacity style={styles.button}>
           <Text style={styles.submitclaim}>Submit Claim</Text>
         </TouchableOpacity>
-      </View>
     </View>
   );
 };
@@ -59,24 +56,26 @@ const Submit = () => {
 export default Submit;
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    marginTop:13,
+    flex:1,
+    marginHorizontal:20,
+  },
 
   headingContainer: {
     flexDirection: 'row',
-    marginTop: 13,
+    alignItems:'center',
+    justifyContent:"space-between",
   },
   heading: {
-    marginLeft: 63,
     fontFamily: Font.semiBold,
   },
   floodstyle: {
     fontFamily: Font.bold,
     fontSize: 12,
-    marginLeft: 20,
     marginTop: 25,
   },
   Incidentdate: {
-    marginLeft: 20,
     color: '#646464',
     fontFamily: Font.regular,
     fontSize: 12,
@@ -85,43 +84,27 @@ const styles = StyleSheet.create({
   date: {
     fontFamily: Font.semiBold,
     fontSize: 12,
-    marginLeft: 20,
   },
   uploadpicture: {
-    marginLeft: 20,
     marginTop: 21,
     fontSize: 12,
     fontFamily: Font.semiBold,
   },
   box: {
-    width: 317,
-    height: 208,
     borderRadius: 13,
     marginTop: 20,
-    marginLeft: 26,
     borderWidth: 1,
     borderColor: '#DBD8D8',
-  },
-  imagepackage: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingHorizontal: 2,
-    paddingTop: 6,
-    paddingRight: 5,
-    paddingLeft: 5,
-    flexWrap: 'wrap',
+    flexDirection:'row',
+    flexWrap:'wrap',
+    justifyContent:'space-between',
+    alignItems:'center',
+    padding:5,
   },
   grassstyle: {
     width: 95,
     height: 95,
-    borderRadius:13,
-  
-  },
-  grassing: {
-    width: 95,
-    height: 95,
-      borderRadius: 13,
-      marginTop:5,
+    borderRadius: 13,
   },
   outerimage: {
     width: 95,
@@ -130,22 +113,19 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#DBD8D8',
     justifyContent: 'center',
-    marginTop:5,
-    // textAlign:"center",
+    marginTop: 10,
     alignItems: 'center',
   },
- button:{
-  backgroundColor:"#009245",
-  marginTop:200,
-  marginHorizontal:25,
-  padding:9,
-  borderRadius:7,
-  // width:400
- },
- submitclaim:{
-   textAlign:'center',
-   color:"white",
-   fontFamily:Font.semiBold,
-   fontSize:13,
- }
+  button: {
+    backgroundColor: '#009245',
+    marginTop: 200,
+    padding: 9,
+    borderRadius: 7,
+  },
+  submitclaim: {
+    textAlign: 'center',
+    color: 'white',
+    fontFamily: Font.semiBold,
+    fontSize: 13,
+  },
 });
