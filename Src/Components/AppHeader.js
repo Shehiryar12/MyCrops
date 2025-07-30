@@ -7,7 +7,7 @@ const AppHeader = () => {
   return (
      <View style={styles.header}>
            <View style={styles.side}>
-             <MaterialIcons name="keyboard-arrow-left" size={22} backgroundColor="red" />
+             <MaterialIcons name="keyboard-arrow-left" size={22} />
            </View>
    
            <Text style={[styles.cropstext, { textAlign: 'center' }]}>Crop To Insure</Text>
