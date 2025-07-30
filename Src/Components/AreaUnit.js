@@ -58,25 +58,25 @@ const AreaUnit = () => {
 
       <View style={styles.dataone}>
         <Text style={styles.headingone}>Cotton</Text>
-        <Text style={[styles.headingone,{marginRight:24}]}>Acre</Text>
+        <Text style={[styles.headingone, { marginRight: 24 }]}>Acre</Text>
         <Text style={styles.headingone}>100</Text>
       </View>
 
-       <View style={styles.dataone}>
+      <View style={styles.dataone}>
         <Text style={styles.headingone}>Rice</Text>
-        <Text style={[styles.headingone,{marginRight:12}]}>Acre</Text>
+        <Text style={[styles.headingone, { marginRight: 12 }]}>Acre</Text>
         <Text style={styles.headingone}>80</Text>
       </View>
 
-       <View style={styles.dataone}>
+      <View style={styles.dataone}>
         <Text style={styles.headingone}>Wheat</Text>
-        <Text style={[styles.headingone,{marginRight:28}]} >Acre</Text>
+        <Text style={[styles.headingone, { marginRight: 28 }]}>Acre</Text>
         <Text style={styles.headingone}>20</Text>
       </View>
 
       <View style={styles.button}>
         <TouchableOpacity>
-            <Text style={styles.nexttext}>Next</Text>
+          <Text style={styles.nexttext}>Next</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -142,9 +142,9 @@ const styles = StyleSheet.create({
   textInput: {
     flex: 1,
     fontFamily: Font.regular,
-    fontSize: 13,
+    fontSize: 11,
     color: '#000',
-    paddingLeft: 12,
+    paddingLeft: 8,
   },
 
   icon: {
@@ -163,8 +163,7 @@ const styles = StyleSheet.create({
   },
   addstyle: {
     color: 'white',
-    fontFamily:Font.regular,
-
+    fontFamily: Font.regular,
   },
   buttonbox: {
     alignItems: 'flex-end',
@@ -180,40 +179,37 @@ const styles = StyleSheet.create({
   data: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginHorizontal:13,
+    marginHorizontal: 13,
   },
-    heading: {
-    color: "green",
+  heading: {
+    color: 'green',
     fontFamily: Font.semiBold,
-    fontSize: 15, 
+    fontSize: 15,
   },
-    dataone: {
+  dataone: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal:14,
-    fontFamily:Font.regular,
+    paddingHorizontal: 14,
+    fontFamily: Font.regular,
   },
-   headingone:{
+  headingone: {
     // textAlign:'center',
-    marginTop:6,
-    color:"#646464",
-    fontFamily:Font.regular,
-    fontSize:12,
-    justifyContent:"center",
-    
-   },
-   button:{
-    backgroundColor:"green",
-    marginTop:200,
-    padding:10,
-    borderRadius:8,
-    marginHorizontal:12,
-   },
-   nexttext:{
-    textAlign:"center",
-    color:"white",
-    fontFamily:Font.semiBold,
-
-    
-   }
+    marginTop: 6,
+    color: '#646464',
+    fontFamily: Font.regular,
+    fontSize: 12,
+    justifyContent: 'center',
+  },
+  button: {
+    backgroundColor: 'green',
+    marginTop: 200,
+    padding: 10,
+    borderRadius: 8,
+    marginHorizontal: 12,
+  },
+  nexttext: {
+    textAlign: 'center',
+    color: 'white',
+    fontFamily: Font.semiBold,
+  },
 });
