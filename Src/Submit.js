@@ -5,14 +5,18 @@ import { Font } from './Constant/Fonts';
 
 const Submit = () => {
 
-  
+   const Comp = (props) => {
+    return(
+            <Image source={props.img} style={styles.grassstyle}/>
+    )
+   }
+
   return (
     <View style={styles.container}>
       <View style={styles.headingContainer}>
           <MaterialIcons name="keyboard-arrow-left" size={24} style={{margin: -7}} />
         <Text style={styles.heading}>Submit Insurance Claim</Text>
-        <View style={{width:14}}>
-          
+        <View style={{width:14}}>      
         </View>
       </View>
 
@@ -22,25 +26,23 @@ const Submit = () => {
         <Text style={styles.uploadpicture}>Upload Pictures</Text>
 
       <View style={styles.box}>
-          <Image
-            source={require('../Src/Screens/grassone.jpg')}
-            style={styles.grassstyle}
+          <Comp
+            img={require('../Src/Screens/grassone.jpg')}
           />
-          <Image
-            source={require('../Src/Screens/grasstwo.jpg')}
-            style={styles.grassstyle}
+          <Comp
+            img={require('../Src/Screens/grasstwo.jpg')}
           />
-          <Image
-            source={require('../Src/Screens/grassthree.jpg')}
-            style={styles.grassstyle}
+          <Comp
+            img={require('../Src/Screens/grassthree.jpg')}
+         
           />
-          <Image
-            source={require('../Src/Screens/grassfour.jpg')}
-            style={styles.grassstyle}
+          <Comp
+            img={require('../Src/Screens/grassfour.jpg')}
+          
           />
-          <Image
-            source={require('../Src/Screens/grassfive.jpg')}
-            style={styles.grassstyle}
+          <Comp
+           img={require('../Src/Screens/grassfive.jpg')}
+          
           />
           <View style={styles.outerimage}>
             <MaterialIcons name="add" size={30}  />
@@ -113,7 +115,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#DBD8D8',
     justifyContent: 'center',
-    marginTop: 10,
+    marginTop: 5,
     alignItems: 'center',
   },
   button: {
