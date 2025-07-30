@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import React from 'react';
 import AppHeader from '../Components/AppHeader';
 import CropInput from '../Components/CropInput';
