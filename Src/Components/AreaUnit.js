@@ -1,4 +1,10 @@
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
 import { Font } from '../Constant/Fonts';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -11,9 +17,7 @@ const AreaUnit = () => {
         <Text style={styles.labeltwo}>Area</Text>
       </View>
 
-   
       <View style={styles.inputRow}>
-     
         <View style={styles.inputWithIcon}>
           <TextInput
             style={styles.textInput}
@@ -40,12 +44,40 @@ const AreaUnit = () => {
 
       <View style={styles.buttonbox}>
         <TouchableOpacity style={[styles.buttonstyle]}>
-            <Text style={styles.addstyle}>Add</Text>
+          <Text style={styles.addstyle}>Add</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={styles.lineview}> 
-         
+      <View style={styles.lineview}></View>
+
+      <View style={styles.data}>
+        <Text style={styles.heading}>Crop</Text>
+        <Text style={styles.heading}>Unit</Text>
+        <Text style={styles.heading}>Area</Text>
+      </View>
+
+      <View style={styles.dataone}>
+        <Text style={styles.headingone}>Cotton</Text>
+        <Text style={[styles.headingone,{marginRight:24}]}>Acre</Text>
+        <Text style={styles.headingone}>100</Text>
+      </View>
+
+       <View style={styles.dataone}>
+        <Text style={styles.headingone}>Rice</Text>
+        <Text style={[styles.headingone,{marginRight:12}]}>Acre</Text>
+        <Text style={styles.headingone}>80</Text>
+      </View>
+
+       <View style={styles.dataone}>
+        <Text style={styles.headingone}>Wheat</Text>
+        <Text style={[styles.headingone,{marginRight:28}]} >Acre</Text>
+        <Text style={styles.headingone}>20</Text>
+      </View>
+
+      <View style={styles.button}>
+        <TouchableOpacity>
+            <Text style={styles.nexttext}>Next</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -63,7 +95,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: 8,
-    // marginTop:10,
     paddingHorizontal: 8,
   },
 
@@ -77,16 +108,13 @@ const styles = StyleSheet.create({
     fontFamily: Font.medium,
     fontSize: 14,
     color: '#646464',
-    // width: 120,
-    // backgroundColor:'red',
   },
 
-   labeltwo: {
+  labeltwo: {
     fontFamily: Font.medium,
     fontSize: 14,
     color: '#646464',
-    // width: 200,
-    width:145,
+    width: 145,
   },
 
   inputWithIcon: {
@@ -95,7 +123,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'lightgrey',
     borderRadius: 13,
-    // paddingHorizontal: 10,
     width: 160,
     height: 50,
     backgroundColor: '#fff',
@@ -113,49 +140,80 @@ const styles = StyleSheet.create({
   },
 
   textInput: {
-flex: 1,
+    flex: 1,
     fontFamily: Font.regular,
     fontSize: 13,
     color: '#000',
-    // textAlign:'center',
-    paddingLeft:12,
-    // width:50,
+    paddingLeft: 12,
   },
 
   icon: {
     marginLeft: 8,
   },
 
-  buttonstyle:{
-    // textAlign:'right'
-    // marginLeft:100,
-    // alignItems:'flex-end',
-    backgroundColor:"#009245",
-    // paddingHorizontal:30,
-    width:95,
-    paddingTop:10,
-    paddingBottom:10,
-    alignItems:"center",
-      borderRadius:10,
-  
-    
+  buttonstyle: {
+    backgroundColor: '#009245',
+    //  fontFamily:Font.regular,
+
+    width: 95,
+    paddingTop: 8,
+    paddingBottom: 8,
+    alignItems: 'center',
+    borderRadius: 10,
   },
-  addstyle:{
-    // alignitem:"flex-end"
-    // paddingHorizontal:30,
-    // marginHorizontal:200,
-      color:'white',
+  addstyle: {
+    color: 'white',
+    fontFamily:Font.regular,
 
   },
-  buttonbox:{
-    alignItems:'flex-end',
-    marginTop:8,
-    paddingHorizontal:10,  
+  buttonbox: {
+    alignItems: 'flex-end',
+    marginTop: 8,
+    paddingHorizontal: 10,
   },
-  lineview:{
-    borderBottomColor:"#DBD8D8",
-    borderBottomWidth:1,
-    marginTop:14,
+  lineview: {
+    borderBottomColor: '#DBD8D8',
+    borderBottomWidth: 1,
+    marginTop: 14,
+    marginHorizontal: 13,
+  },
+  data: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     marginHorizontal:13,
-  }
+  },
+    heading: {
+    color: "green",
+    fontFamily: Font.semiBold,
+    fontSize: 15, 
+  },
+    dataone: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal:14,
+    fontFamily:Font.regular,
+  },
+   headingone:{
+    // textAlign:'center',
+    marginTop:6,
+    color:"#646464",
+    fontFamily:Font.regular,
+    fontSize:12,
+    justifyContent:"center",
+    
+   },
+   button:{
+    backgroundColor:"green",
+    marginTop:200,
+    padding:10,
+    borderRadius:8,
+    marginHorizontal:12,
+   },
+   nexttext:{
+    textAlign:"center",
+    color:"white",
+    fontFamily:Font.semiBold,
+
+    
+   }
 });
