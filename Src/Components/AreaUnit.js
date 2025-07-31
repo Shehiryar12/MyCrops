@@ -24,6 +24,7 @@ const AreaUnit = () => {
             placeholder="Select unit"
             placeholderTextColor="#DBD8D8"
             maxLength={8}
+            
           />
           <MaterialIcons
             name="keyboard-arrow-down"
@@ -38,6 +39,7 @@ const AreaUnit = () => {
             style={styles.textInput}
             placeholder="Enter area"
             placeholderTextColor="#DBD8D8"
+            keyboardType="numeric"
           />
         </View>
       </View>
@@ -101,7 +103,7 @@ const styles = StyleSheet.create({
   inputRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: 8,
+      paddingHorizontal: 8,
   },
 
   labelone: {
@@ -167,19 +169,20 @@ const styles = StyleSheet.create({
   },
   buttonbox: {
     alignItems: 'flex-end',
-    marginTop: 8,
+    marginTop: 17,
     paddingHorizontal: 10,
   },
   lineview: {
     borderBottomColor: '#DBD8D8',
     borderBottomWidth: 1,
-    marginTop: 14,
+    marginTop: 15,
     marginHorizontal: 13,
   },
   data: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginHorizontal: 13,
+    marginTop:10,
   },
   heading: {
     color: 'green',
