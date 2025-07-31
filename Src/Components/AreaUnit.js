@@ -24,7 +24,6 @@ const AreaUnit = () => {
             placeholder="Select unit"
             placeholderTextColor="#DBD8D8"
             maxLength={8}
-            
           />
           <MaterialIcons
             name="keyboard-arrow-down"
@@ -40,6 +39,7 @@ const AreaUnit = () => {
             placeholder="Enter area"
             placeholderTextColor="#DBD8D8"
             keyboardType="numeric"
+            maxLength={11}
           />
         </View>
       </View>
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
   inputRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-      paddingHorizontal: 8,
+    paddingHorizontal: 8,
   },
 
   labelone: {
@@ -155,8 +155,6 @@ const styles = StyleSheet.create({
 
   buttonstyle: {
     backgroundColor: '#009245',
-    //  fontFamily:Font.regular,
-
     width: 95,
     paddingTop: 8,
     paddingBottom: 8,
@@ -182,7 +180,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginHorizontal: 13,
-    marginTop:10,
+    marginTop: 10,
   },
   heading: {
     color: 'green',
@@ -196,7 +194,6 @@ const styles = StyleSheet.create({
     fontFamily: Font.regular,
   },
   headingone: {
-    // textAlign:'center',
     marginTop: 6,
     color: '#646464',
     fontFamily: Font.regular,

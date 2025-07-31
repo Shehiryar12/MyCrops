@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import {View} from 'react-native';
 import React from 'react';
 import AppHeader from '../Components/AppHeader';
 import CropInput from '../Components/CropInput';
@@ -10,19 +10,10 @@ const Cropsinsure = () => {
       <AppHeader />
       <CropInput />
     <AreaUnit/>
- 
     </View>
   );
 };
 
 export default Cropsinsure;
 
-const styles = StyleSheet.create({
-  areacontainer: {
-    // flexDirection: 'row',  
-    // alignItems:'center',
-  },
-  textinputstyle:{
 
-  }
-});

@@ -6,13 +6,10 @@ import { Font } from '../Constant/Fonts';
 const AppHeader = () => {
   return (
     <View style={styles.header}>
-      <MaterialIcons name="keyboard-arrow-left" size={22} />
-
-      <Text style={[styles.cropstext, { textAlign: 'center' }]}>
-        Crop To Insure
-      </Text>
-
-      <View style={styles.side} />
+      <MaterialIcons name="keyboard-arrow-left" size={22}  />
+      <Text style={styles.cropstext} numberOfLines={1} >Crop To Insure</Text>
+ 
+ <View style={styles.space}></View>
     </View>
   );
 };
@@ -24,10 +21,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 20,
-    marginHorizontal: 10,
+    marginHorizontal:10,
+    alignItems:'center',
   },
   cropstext: {
     fontFamily: Font.semiBold,
-    fontSize: 15,
+    fontSize: 15, 
+    flexShrink:1,
   },
+  space:{
+    width:10,
+  }
+ 
 });
