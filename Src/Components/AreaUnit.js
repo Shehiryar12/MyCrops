@@ -40,6 +40,7 @@ const AreaUnit = () => {
             placeholderTextColor="#DBD8D8"
             keyboardType="numeric"
             maxLength={11}
+            paddingLeft={1}
           />
         </View>
       </View>
@@ -60,19 +61,19 @@ const AreaUnit = () => {
 
       <View style={styles.dataone}>
         <Text style={styles.headingone}>Cotton</Text>
-        <Text style={[styles.headingone, { marginRight: 24 }]}>Acre</Text>
+        <Text style={[styles.headingone, { marginRight: 20 }]}>Acre</Text>
         <Text style={styles.headingone}>100</Text>
       </View>
 
       <View style={styles.dataone}>
         <Text style={styles.headingone}>Rice</Text>
-        <Text style={[styles.headingone, { marginRight: 12 }]}>Acre</Text>
+        <Text style={[styles.headingone, { marginRight: 10 }]}>Acre</Text>
         <Text style={styles.headingone}>80</Text>
       </View>
 
       <View style={styles.dataone}>
         <Text style={styles.headingone}>Wheat</Text>
-        <Text style={[styles.headingone, { marginRight: 28 }]}>Acre</Text>
+        <Text style={[styles.headingone, { marginRight: 25 }]}>Acre</Text>
         <Text style={styles.headingone}>20</Text>
       </View>
 
@@ -98,6 +99,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 8,
     paddingHorizontal: 8,
+  
   },
 
   inputRow: {
@@ -198,7 +200,6 @@ const styles = StyleSheet.create({
     color: '#646464',
     fontFamily: Font.regular,
     fontSize: 12,
-    justifyContent: 'center',
   },
   button: {
     backgroundColor: 'green',
@@ -212,4 +213,4 @@ const styles = StyleSheet.create({
     color: 'white',
     fontFamily: Font.semiBold,
   },
-});
+})

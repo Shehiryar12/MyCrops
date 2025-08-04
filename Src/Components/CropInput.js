@@ -6,18 +6,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 const CropInput = () => {
   return (
     <View style={{ marginTop: 17 }}>
-      <Text
-        style={[
-          styles.crops,
-          {
-            marginLeft: 16,
-            color: '#646464',
-            fontSize: 14,
-          },
-        ]}
-      >
-        Crop
-      </Text>
+      <Text style={styles.crops}>Crop</Text>
 
       <View style={styles.inputWithIcon}>
         <TextInput
@@ -37,6 +26,9 @@ export default CropInput;
 const styles = StyleSheet.create({
   crops: {
     fontFamily: Font.semiBold,
+    marginLeft: 16,
+    color: '#646464',
+    fontSize: 14,
   },
   inputWithIcon: {
     flexDirection: 'row',
@@ -47,11 +39,10 @@ const styles = StyleSheet.create({
     marginHorizontal: 18,
     height: 54,
     backgroundColor: '#fff',
+    marginTop:5,
   },
   textInputStyle: {
     flex: 1,
     fontFamily: Font.regular,
-    fontSize: 15,
-    color: '#000',
   },
 });

@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
-import Cropsinsure from './Src/Screens/Cropsinsure';
+import Entry from './Src/Components/Entry';
 
 export default function App() {
   return (
-          
-<Cropsinsure/>
+        
+<Entry/>
 
   )  
 }
